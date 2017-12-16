@@ -12,10 +12,9 @@ Heading: Nexa Bold (?) */
 /* Fonts */
 
 @font-face {
-    font-family: myFirstFont;
-    src: url('/public/images/fullwidth2.jpg');
+    font-family: Abelimp;
+    src: url('/public/fonts/Abel.ttf');
 }
-/*  */
 /* div {
     font-family: myFirstFont;
 } */
@@ -24,8 +23,8 @@ html, body{
     height: 100vh;
 }
 header{
-    background-image: url('/public/images/fullwidth2.jpg');
-    height: 93.65vh;
+    background: url('/public/images/fullwidth2.jpg') no-repeat center center fixed;
+    height: 94vh;
     background-size: cover;
 }
 /* Navbar */
@@ -34,13 +33,14 @@ header{
     margin-right: -50px;
 }
 .logoTweak:hover{
-    filter: brightness(150%)
+    filter: brightness(125%)
 }
 .custom-toggler.navbar-toggler {
-    border-color: #ab2346;
+    border-color: #ab2346 !important;
+    outline: none; /*This is a good thing to use in future builds*/
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(171,35,70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(171,35,70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 .colorNav{
     color: #c15f78 !important;
@@ -53,3 +53,8 @@ header{
 }
 
 /* Header */
+@media (min-width: 992px){
+    .navbar{
+        height: 6vh;
+    }
+}
