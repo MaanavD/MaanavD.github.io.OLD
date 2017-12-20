@@ -12,20 +12,31 @@ Heading: Nexa Bold (?) */
 /* Fonts */
 
 @font-face {
-    font-family: Abelimp;
+    font-family: Abel;
     src: url('/public/fonts/Abel.ttf');
 }
-/* div {
-    font-family: myFirstFont;
-} */
-/* Element Tweaks */
+.abel{
+    font-family: Abel;
+}
+@font-face {
+    font-family: CodeLight;
+    src: url('/public/fonts/CODEL.otf');
+}
+.codeLight{
+    font-family: CodeLight;
+}
 html, body{
     height: 100vh;
 }
+body{
+    position: relative;
+}
 header{
-    background: url('/public/images/fullwidth2.jpg') no-repeat center center fixed;
-    height: 94vh;
+    background: url('/public/images/fullwidth3.png') no-repeat center center fixed;
+    height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /* Navbar */
 .logoTweak{
@@ -53,8 +64,84 @@ header{
 }
 
 /* Header */
+.centerContent{
+    text-align: center;
+}
+.hiFont{
+    font-size: 11vh;
+    color: #fafbf9;
+    text-shadow: 1px 0.5px #181b18;
+    padding-top: 12.5vh;
+}
+.name{
+    color: #fafbf9;
+    padding-top: 20vh;
+    text-shadow: 2px 1px #ab2346;
+    font-size: 10vw;
+}
+.arrow{
+    color: #fafbf9;
+    zoom: 5;
+}
+.arrowDiv{
+    padding-left: 50%;
+    padding-top: 15vh;
+}
+
+/* About Me */
+.AboutMe{
+    background-color: #231623;
+    height: 100vh;
+}
+.spanHighlight{
+    color: #ab2346;
+}
+.whiteText{
+    color: #fafbf9;
+}
+.sectionPad{
+    padding-top: 10vh;
+}
+.picSize{
+    height: 75vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heyFont{
+    font-size: 8vh;
+    padding-bottom: 2.5vh;
+}
+.aboutMePara{
+    font-size: 5vh;
+    padding-top: 2.5vh;
+}
+/* Media Queries */
 @media (min-width: 992px){
     .navbar{
         height: 6vh;
     }
+
+}
+@media (max-width: 992px){
+.name{
+    font-size: 12vh;
+}
+.picSize{
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+/* Preloader */
+#overlay{
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0, 1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
 }

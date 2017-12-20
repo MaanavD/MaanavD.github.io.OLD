@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,13 +11,24 @@
   <link rel="stylesheet" href="public/css/animate.css">
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
-  <title>Maanav's Site</title>
+  <title>Maanav's Portfolio Page</title>
 </head>
 
-<body>
+<body> <!--TODO: Smooth Scroll -->
+  <!-- Preloader --> 
+  <div id="overlay">
+    <div class="loading-panel-wrap"> <!--TODO: add preloader -->
+      <div class="loading-panel">
+        <span>
+          <h3>Loading</h3>
+        </span>
+      </div>
+      <div class="shadow"></div>
+    </div>
+  </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #181b18;">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navSpy" style="background-color: #181b18;">
+    <a class="navbar-brand nav-link" href="#home">
       <img class="logoTweak" src="public/images/logo.png" alt="Navbar Logo">
     </a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -25,30 +36,58 @@
       <span class="navbar-toggler-icon "></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="mx-auto navbar-nav">
+    <div class="collapse navbar-collapse">
+      <ul class="mx-auto navbar-nav" id="navSpy">
         <li class="nav-item ">
-          <a class="colorNav nav-link" href="#">About Me</a>
+          <a class="colorNav nav-link" href="#AboutMe">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="colorNav nav-link" href="#">Career</a>
+          <a class="colorNav nav-link" href="#Career">Career</a>
         </li>
         <li class="nav-item ">
-          <a class="colorNav nav-link" href="#">Projects</a>
+          <a class="colorNav nav-link" href="#Projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="colorNav nav-link" target="blank" href="http://i.imgur.com/588JsU2.png">Resumé</a>
+          <a class="colorNav nav-link" target="blank" href="https://i.imgur.com/588JsU2.png">Resumé</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Header -->
-<header>
-  <h2>Hi! I'm</h2>
-  <h1>Maanav Dalal</h1>
-  <i class="fas fa-angle-down"></i>
-</header>
+  <Header>
+    <div class="container" id="#home">
+      <h2 class="abel centerContent hiFont">Hi! I'm</h2>
+      <h1 class="centerContent abel name">Maanav Dalal</h1>
+      <div class="arrowDiv">
+        <a href="#AboutMe">
+          <i class="animated infinite rubberBand arrow fas fa-angle-down"></i>
+        </a>
+      </div>
+    </div>
+  </Header>
+  <!-- About Me -->
+  <AboutMe>
+    <div class="AboutMe container-fluid " id="AboutMe">
+      <div class="sectionPad container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+            <h2 class="abel heyFont whiteText">Hey! Nice to... "meet" you</h2>
+            <p class="aboutMePara whiteText">I'm currently a high school student studying at Turner Fenton Secondary School in
+              <span>Ontario</span>!</p>
+            <p class="aboutMePara whiteText">In my free time, I love to
+              <span class="spanHighlight">program</span>, hang out with my
+              <span class="spanHighlight">friends</span>, and play
+              <span class="spanHighlight">video games</span>.</p>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12"> <!--TODO: Animate on Scroll -->
+            <img class="picSize mx-auto animated tada " src="public/images/maanav.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </AboutMe>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
   <script src="public/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
