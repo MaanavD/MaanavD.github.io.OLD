@@ -4,11 +4,6 @@ Main Highlight: #ab2346;
 Secondary: #c15f78;
 Eggshell: #fafbf9; */
 
-/* Fonts
-Title font: Abel
-Text font: Open Sans
-Heading: Nexa Bold (?) */
-
 /* Fonts */
 
 @font-face {
@@ -35,8 +30,6 @@ header{
     background: url('/public/images/fullwidth3.png') no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 /* Navbar */
 .logoTweak{
@@ -62,7 +55,6 @@ header{
 .navShift{
     margin-left: 150px;
 }
-
 /* Header */
 .centerContent{
     text-align: center;
@@ -132,6 +124,15 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.nav-link{
+    text-align: center;
+}
+.heyFont{
+    font-size: 5vh;
+}
+.aboutMePara{
+    font-size: 2.5vh;
 }
 }
 

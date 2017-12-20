@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,10 +14,12 @@
   <title>Maanav's Portfolio Page</title>
 </head>
 
-<body> <!--TODO: Smooth Scroll -->
-  <!-- Preloader --> 
-  <div id="overlay">
-    <div class="loading-panel-wrap"> <!--TODO: add preloader -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!--TODO: Smooth Scroll, fix the weird white lines -->
+  <!-- Preloader -->
+  <!-- <div id="overlay">
+    <div class="loading-panel-wrap">
+      <!--TODO: add preloader -->
       <div class="loading-panel">
         <span>
           <h3>Loading</h3>
@@ -25,18 +27,16 @@
       </div>
       <div class="shadow"></div>
     </div>
-  </div>
+  </div> -->
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navSpy" style="background-color: #181b18;">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #181b18;"> <!--TODO: Right Colour border -->
     <a class="navbar-brand nav-link" href="#home">
       <img class="logoTweak" src="public/images/logo.png" alt="Navbar Logo">
     </a>
-    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon "></span>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar-Nav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar-Nav">
       <ul class="mx-auto navbar-nav" id="navSpy">
         <li class="nav-item ">
           <a class="colorNav nav-link" href="#AboutMe">About Me</a>
@@ -80,7 +80,8 @@
               <span class="spanHighlight">friends</span>, and play
               <span class="spanHighlight">video games</span>.</p>
           </div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12"> <!--TODO: Animate on Scroll -->
+          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+            <!--TODO: Animate on Scroll -->
             <img class="picSize mx-auto animated tada " src="public/images/maanav.png" alt="">
           </div>
         </div>
