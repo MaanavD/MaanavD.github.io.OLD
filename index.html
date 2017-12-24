@@ -14,13 +14,14 @@
   <title>Maanav's Portfolio Page</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target="#navScrollSpy" data-offset="50">
   <!--TODO: Smooth Scroll, fix the weird white lines -->
   <!-- Preloader -->
   <!--TODO: add preloader -->
 
   <!-- Navbar -->
-  <nav class="navbar border border-top-0 border-left-0 border-right-0 navB navbar-expand-lg navbar-dark fixed-top" style="background-color: #181b18;">
+  <nav class="navbar border border-top-0 border-left-0 border-right-0 navB navbar-expand-lg navbar-dark fixed-top" class="navTest"
+    style="background-color: #181b18;">
     <!--TODO: Right Colour border -->
     <a class="navbar-brand nav-link" href="#home">
       <img class="logoTweak" src="public/images/logo.png" alt="Navbar Logo">
@@ -29,15 +30,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar-Nav">
-      <ul class="mx-auto navbar-nav" id="navSpy">
+      <ul class="mx-auto navbar-nav nav nav-tabs" id="navScrollSpy">
         <li class="nav-item ">
-          <a class="colorNav nav-link" href="#AboutMe">About Me</a>
+          <a class="colorNav nav-link" href="#section-AboutMe">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="colorNav nav-link" href="#Career">Career</a>
+          <a class="colorNav nav-link" href="#section-Career">Career</a>
         </li>
         <li class="nav-item ">
-          <a class="colorNav nav-link" href="#Projects">Projects</a>
+          <a class="colorNav nav-link" href="#section-Projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="colorNav nav-link" target="blank" href="https://i.imgur.com/588JsU2.png">Resumé</a>
@@ -60,26 +61,33 @@
   </Header>
   <!-- About Me -->
   <AboutMe>
-    <div class="AboutMe container-fluid " id="AboutMe">
+    <div class="AboutMe container-fluid " id="section-AboutMe">
       <div class="sectionPad container">
-          <h2 class="abel centerContent heyFont">Hi! I'm</h2>
+        <h2 class="abel centerContent heyFont">Hi! I'm</h2>
         <div class="row">
-          <div class="col-lg-2">
-            <div class="itemCir infoZoom mx-auto"></div>
-            <div class="itemCir2 infoZoom mx-auto"></div>
-          </div>
-          <div class="col-lg-8">
-            <div class="nameCir mx-auto"></div>
-          </div>
-          <div class="col-lg-2">
-            <div class="itemCir infoZoom mx-auto"></div>
-            <div class="itemCir2 infoZoom mx-auto"></div>
-          </div>
         </div>
 
       </div>
     </div>
   </AboutMe>
+  <!-- Career -->
+  <!-- <Career>
+    <div class="Career" id="section-Career">
+    </div>
+  </Career> -->
+  <!-- Projects -->
+  <!-- <Projects>
+    <div class="Projects" id="section-Projects">
+
+
+    </div>
+  </Projects> -->
+  <!-- Contact -->
+  <!-- <Contact>
+
+  </Contact> -->
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
   <script src="public/js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -88,6 +96,13 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js" integrity="sha256-Fw/o8ZlEaGD4fqJz/yeVp5RBuuK3d9IlXr0XF4IN9GU="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(function () {
+      var scroll = new SmoothScroll('a[href*="#section-"]');
+    })
+  </script>
 </body>
 
 </html>
