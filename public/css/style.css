@@ -4,145 +4,208 @@ Main Highlight: #ab2346;
 Secondary: #c15f78;
 Eggshell: #fafbf9; */
 
+
 /* Fonts */
 
 @font-face {
     font-family: Abel;
     src: url('/public/fonts/Abel.ttf');
 }
-.abel{
+
+.abel {
     font-family: Abel;
 }
+
 @font-face {
     font-family: CodeLight;
     src: url('/public/fonts/CODEL.otf');
 }
-.codeLight{
+
+.codeLight {
     font-family: CodeLight;
 }
-html, body{
+
+html,
+body {
     height: 100vh;
 }
-body{
+
+body {
     position: relative;
 }
-header{
+
+header {
     background: url('/public/images/fullwidth3.png') no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
 }
+
+
 /* Navbar */
-.logoTweak{
+
+.logoTweak {
     height: 35px;
     margin-right: -50px;
 }
-.logoTweak:hover{
+
+.logoTweak:hover {
     filter: brightness(125%)
 }
+
 .custom-toggler.navbar-toggler {
     border-color: #ab2346 !important;
-    outline: none; /*This is a good thing to use in future builds*/
+    outline: none;
+    /*This is a good thing to use in future builds*/
 }
+
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(171,35,70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(171,35,70, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
-.colorNav{
+
+.colorNav {
     color: #c15f78 !important;
 }
-.colorNav:hover{
+
+.colorNav:hover {
     color: #ab2346 !important;
 }
-.navShift{
+
+.navShift {
     margin-left: 150px;
 }
+
+.navB {
+    border-bottom-color: #ab2346 !important;
+    border-bottom-width: 2px !important;
+}
+
+
 /* Header */
-.centerContent{
+
+.centerContent {
     text-align: center;
 }
-.hiFont{
+.hiFont {
     font-size: 11vh;
     color: #fafbf9;
     text-shadow: 1px 0.5px #181b18;
     padding-top: 12.5vh;
 }
-.name{
+.name {
     color: #fafbf9;
     padding-top: 20vh;
     text-shadow: 2px 1px #ab2346;
     font-size: 10vw;
 }
-.arrow{
+.arrow {
     color: #fafbf9;
     zoom: 5;
 }
-.arrowDiv{
+.arrowDiv {
     padding-left: 50%;
     padding-top: 15vh;
 }
 
 /* About Me */
-.AboutMe{
+.AboutMe {
     background-color: #231623;
     height: 100vh;
 }
-.spanHighlight{
+.spanHighlight {
     color: #ab2346;
 }
-.whiteText{
+.whiteText {
     color: #fafbf9;
 }
-.sectionPad{
+.sectionPad {
     padding-top: 10vh;
 }
-.picSize{
+.picSize {
     height: 75vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.heyFont{
+.heyFont {
     font-size: 8vh;
     padding-bottom: 2.5vh;
+    color: #fafbf9;
+    text-shadow: 1px 0.5px #181b18;
 }
-.aboutMePara{
+.aboutMePara {
     font-size: 5vh;
     padding-top: 2.5vh;
 }
-/* Media Queries */
-@media (min-width: 992px){
-    .navbar{
-        height: 6vh;
-    }
+.nameCir{
+    border-radius: 50%;
+    height: 75vh;
+    width: 75vh;
+    background-color: #fafbf9;  
+}
+.itemCir{
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+    background-color: #fafbf9;
+    padding: 5px 5px 5px 5px;
+
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    text-align: center;
+    overflow: hidden;
+  
 
 }
-@media (max-width: 992px){
-.name{
-    font-size: 12vh;
+.itemCir2{
+    border-radius: 50%;
+    margin-top: 25vh;
+    height: 25vh;
+    width: 25vh;
+    background-color: #fafbf9;  
+
 }
-.picSize{
-    height: 50vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.infoZoom:hover{
+    height: 45vh;
+    width: 45vh;
 }
-.nav-link{
-    text-align: center;
-}
-.heyFont{
-    font-size: 5vh;
-}
-.aboutMePara{
-    font-size: 2.5vh;
-}
+/* Media Queries */
+@media (min-width: 992px) {}
+@media (max-width: 992px) {
+    .name {
+        font-size: 12vh;
+    }
+
+    .picSize {
+        height: 50vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .heyFont {
+        font-size: 5vh;
+    }
+
+    .aboutMePara {
+        font-size: 2.5vh;
+    }
 }
 
 /* Preloader */
-#overlay{
+#overlay {
     height: 100%;
     width: 100%;
-    background:rgba(0,0,0, 1);
+    background: rgba(0, 0, 0, 1);
     position: fixed;
     left: 0;
     top: 0;
-    z-index:9999;
+    z-index: 9999;
 }

@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="public/css/animate.css">
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
@@ -17,19 +17,11 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--TODO: Smooth Scroll, fix the weird white lines -->
   <!-- Preloader -->
-  <!-- <div id="overlay">
-    <div class="loading-panel-wrap">
-      <!--TODO: add preloader -->
-      <div class="loading-panel">
-        <span>
-          <h3>Loading</h3>
-        </span>
-      </div>
-      <div class="shadow"></div>
-    </div>
-  </div> -->
+  <!--TODO: add preloader -->
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #181b18;"> <!--TODO: Right Colour border -->
+  <nav class="navbar border border-top-0 border-left-0 border-right-0 navB navbar-expand-lg navbar-dark fixed-top" style="background-color: #181b18;">
+    <!--TODO: Right Colour border -->
     <a class="navbar-brand nav-link" href="#home">
       <img class="logoTweak" src="public/images/logo.png" alt="Navbar Logo">
     </a>
@@ -70,19 +62,18 @@
   <AboutMe>
     <div class="AboutMe container-fluid " id="AboutMe">
       <div class="sectionPad container">
+          <h2 class="abel centerContent heyFont">Hi! I'm</h2>
         <div class="row">
-          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-            <h2 class="abel heyFont whiteText">Hey! Nice to... "meet" you</h2>
-            <p class="aboutMePara whiteText">I'm currently a high school student studying at Turner Fenton Secondary School in
-              <span>Ontario</span>!</p>
-            <p class="aboutMePara whiteText">In my free time, I love to
-              <span class="spanHighlight">program</span>, hang out with my
-              <span class="spanHighlight">friends</span>, and play
-              <span class="spanHighlight">video games</span>.</p>
+          <div class="col-lg-2">
+            <div class="itemCir infoZoom mx-auto"></div>
+            <div class="itemCir2 infoZoom mx-auto"></div>
           </div>
-          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-            <!--TODO: Animate on Scroll -->
-            <img class="picSize mx-auto animated tada " src="public/images/maanav.png" alt="">
+          <div class="col-lg-8">
+            <div class="nameCir mx-auto"></div>
+          </div>
+          <div class="col-lg-2">
+            <div class="itemCir infoZoom mx-auto"></div>
+            <div class="itemCir2 infoZoom mx-auto"></div>
           </div>
         </div>
 
