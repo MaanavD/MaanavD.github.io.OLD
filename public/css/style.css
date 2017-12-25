@@ -42,25 +42,30 @@ header {
 
 
 /* Navbar */
-.nav-tabs{
+
+.nav-tabs {
     border-bottom: 0 !important;
 }
+
 .nav-tabs .nav-item {
     margin-bottom: 0px !important;
 }
+
 .nav-tabs .nav-link {
     border: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-    border-color: #181b18 #181b18 #ddd !important; 
+    border-color: #181b18 #181b18 #ddd !important;
     color: #ab2346 !important;
     border-bottom-color: #181b18 !important;
     border-bottom-width: 0px !important;
     border-bottom-style: solid !important;
 }
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     color: #ab2346 !important;
@@ -71,7 +76,9 @@ header {
     border-bottom-style: solid !important;
 }
 
+
 /* Done fixing bootstrap */
+
 .logoTweak {
     height: 35px;
     margin-right: -50px;
@@ -114,91 +121,116 @@ header {
 .centerContent {
     text-align: center;
 }
+
 .hiFont {
     font-size: 11vh;
     color: #fafbf9;
     text-shadow: 1px 0.5px #181b18;
     padding-top: 12.5vh;
 }
+
 .name {
     color: #fafbf9;
     padding-top: 20vh;
     text-shadow: 2px 1px #ab2346;
     font-size: 10vw;
 }
+
 .arrow {
     color: #fafbf9;
     zoom: 5;
 }
+
 .arrowDiv {
     padding-left: 50%;
     padding-top: 15vh;
 }
 
+
 /* About Me */
+
 .AboutMe {
     background-color: #231623;
     height: 100vh;
 }
+
 .spanHighlight {
     color: #ab2346;
 }
+
 .whiteText {
     color: #fafbf9;
 }
+
 .sectionPad {
-    padding-top: 10vh;
+    padding-top: 8vh;
 }
+
 .picSize {
     height: 75vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .heyFont {
-    font-size: 8vh;
+    font-size: 5vw;
     padding-bottom: 2.5vh;
     color: #fafbf9;
     text-shadow: 1px 0.5px #181b18;
 }
+
 .aboutMePara {
-    font-size: 5vh;
-    padding-top: 2.5vh;
+    font-size: 2.25vw;
+    padding-top: 1.5vh;
 }
-.nameCir{
-    border-radius: 50%;
-    height: 75vh;
-    width: 75vh;
-    background-color: #fafbf9;  
+
+.bubble2 {
+    margin-top: -25vh;
 }
+
+
 /* Media Queries */
+
 @media (min-width: 992px) {}
+
 @media (max-width: 992px) {
     .name {
         font-size: 12vh;
     }
-
     .picSize {
         height: 50vh;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
     .nav-link {
         text-align: center;
     }
-
     .heyFont {
         font-size: 5vh;
     }
-
     .aboutMePara {
         font-size: 2.5vh;
     }
 }
 
+@media (max-width: 768px) {
+    .aboutMePara {
+        font-size: 3.5vw;
+    }
+}
+
+
+/* Career */
+
+.iconSize {
+    zoom: 5;
+}
+
+
 /* Preloader */
+
 #overlay {
     height: 100%;
     width: 100%;

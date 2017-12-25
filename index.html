@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" integrity="sha256-UnpNLaCbwDQ4tJMVKEqHx75/CcgToCrpi7110fQHNoE="
+    crossorigin="anonymous">
   <link rel="stylesheet" href="public/css/style.css">
   <link rel="stylesheet" href="public/css/animate.css">
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
@@ -23,7 +25,7 @@
   <nav class="navbar border border-top-0 border-left-0 border-right-0 navB navbar-expand-lg navbar-dark fixed-top" class="navTest"
     style="background-color: #181b18;">
     <!--TODO: Right Colour border -->
-    <a class="navbar-brand nav-link" href="#home">
+    <a class="navbar-brand nav-link" href="#section-home">
       <img class="logoTweak" src="public/images/logo.png" alt="Navbar Logo">
     </a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar-Nav">
@@ -46,14 +48,16 @@
       </ul>
     </div>
   </nav>
-
+  <Home>
+    <div class="" id="section-home"></div>
+  </Home>
   <!-- Header -->
   <Header>
-    <div class="container" id="#home">
+    <div class="container" id="#section-home">
       <h2 class="abel centerContent hiFont">Hi! I'm</h2>
       <h1 class="centerContent abel name">Maanav Dalal</h1>
       <div class="arrowDiv">
-        <a href="#AboutMe">
+        <a href="#section-AboutMe">
           <i class="animated infinite rubberBand arrow fas fa-angle-down"></i>
         </a>
       </div>
@@ -63,18 +67,43 @@
   <AboutMe>
     <div class="AboutMe container-fluid " id="section-AboutMe">
       <div class="sectionPad container">
-        <h2 class="abel centerContent heyFont">Hi! I'm</h2>
+        <h2 class="abel centerContent heyFont">I guess this is hello?</h2>
         <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+            <p class="aboutMePara whiteText">I'm currently a high school student in the
+              <span class="spanHighlight">International Baccalaurate</span> studying at Turner Fenton Secondary School in
+              <span class="spanHighlight">Ontario</span>!</p>
+            <br class="aboutMePara">
+            <p class="aboutMePara whiteText">In my free time, I love to
+              <span class="spanHighlight">program</span>, hang out with my
+              <span class="spanHighlight">friends</span>, and play
+              <span class="spanHighlight">video games</span>.</p>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+            <!--TODO: Animate on Scroll -->
+            <img class="picSize mx-auto animated tada " src="public/images/maanav.png" alt="Placeholder Image">
+          </div>
         </div>
 
       </div>
     </div>
+    </div>
   </AboutMe>
   <!-- Career -->
-  <!-- <Career>
+  <Career>
     <div class="Career" id="section-Career">
+      <i class="iconSize icon-html5-alt"></i>
+      <i class="iconSize icon-css3-alt"></i>
+      <i class="iconSize icon-javascript-alt"></i>
+      <i class="iconSize icon-nodejs"></i>
+      <i class="iconSize icon-java-bold"></i>
+      <i class="iconSize icon-bootstrap"></i>
+      <i class="iconSize icon-git"></i>
+      <i class="iconSize icon-mysql"></i>
+      <i class="iconSize icon-reactjs"></i>
+      <i class="iconSize icon-python"></i>
     </div>
-  </Career> -->
+  </Career>
   <!-- Projects -->
   <!-- <Projects>
     <div class="Projects" id="section-Projects">
