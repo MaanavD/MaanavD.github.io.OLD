@@ -196,6 +196,31 @@ header {
     color: #fafbf9;
     text-shadow: 1px 0.5px #181b18;
 }
+.boxImg{
+    height: inherit;
+    top: 0;
+}
+
+/* Modal */
+.modal{
+    color: #fafbf9;
+}
+.modal-content{
+    background-color: #c15f78;
+}
+.modal-header{
+    border-color: #181b18;
+}
+.modalBtn{
+    border-top-color: #181b18;
+
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.modalBtn:hover{
+    background-color: #ab2346 !important;
+    transition: 1s ease;
+}
 /* Muuri */
 .grid {
     position: relative;
@@ -228,7 +253,6 @@ header {
     height: 100%;
     cursor: pointer;
     border-radius: 10px;
-    padding-top: 25px;
     padding-bottom: auto;
     background-color: #ab2346;
     font-size: 25px;
@@ -248,7 +272,7 @@ header {
     background-color: #c15f78;
   }
   .item-content:hover .overlayReveal {
-    opacity: 1;
+    opacity: 0.90;
   }
   .textReveal {
     color: #fafbf9;
