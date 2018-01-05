@@ -91,19 +91,110 @@
   </AboutMe>
   <!-- Career -->
   <Career>
-    <div class="Career" id="section-Career">
-      <i class="iconSize icon-html5-alt"></i>
-      <i class="iconSize icon-css3-alt"></i>
-      <i class="iconSize icon-javascript-alt"></i>
-      <i class="iconSize icon-nodejs"></i>
-      <i class="iconSize icon-java-bold"></i>
-      <i class="iconSize icon-bootstrap"></i>
-      <i class="iconSize icon-git"></i>
-      <i class="iconSize icon-mysql"></i>
-      <i class="iconSize icon-reactjs"></i>
-      <i class="iconSize icon-python"></i>
+    <div class="Career container-fluid" id="section-Career">
+      <div class="container">
+          <h2 class="abel centerContent heyaFont">This is all the cool stuff I've done:</h2>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 col-sm-12">
+            <div class="grid">
+              <div class="item">
+                <div class="item-content"><span class="smallHide">Best UX / UI at StarterHacks</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal" data-toggle="modal" data-target="#exampleModal">
+                          <span class="smallHide">At my first ever Hackathon, we created a project called HackEasy. Click for details!</div> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide"> Best overall Hack at AlphaHacks</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">At this Fintech Hackathon, I worked on an app called Employmint. Click for details!</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">START Conference Chair</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">START is a Leadership Conference that I am the present chair for.</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">DECA Regionals Competitor</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">2 Medals and 5 Ribbons in BSM over 4 years!</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">DECA Provincials Competitor</span> 
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">7 Medals, one fourth place plaque in BSM.</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">DECA ICDC Competitor</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">Attended 2016 (Tennessee) and 2017 (Anaheim) International Career Development Conferences.</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">TED Education Club Member</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">I will be giving a TED Talk later this year on ()</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">IBMC Executive & Mentorship Developer</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">Ran and facilititated the International Baccalaurate Mentorship Conference.</div></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-content"><span class="smallHide">Beyond the Hurt (Red Cross) Ambassador</span>
+                  <div class="overlayReveal">
+                    <div class="textReveal"><span class="smallHide">Helped spread positivity and gave anti-bullying speeches.</div></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-2 col-sm-12">
+            <i class="iconSize icon-html5-alt"></i>
+            <i class="iconSize icon-css3-alt"></i>
+            <i class="iconSize icon-javascript-alt"></i>
+            <i class="iconSize icon-nodejs"></i>
+            <i class="iconSize icon-java-bold"></i>
+            <i class="iconSize icon-git"></i>
+          </div>
+        </div>
+
+      </div>
     </div>
   </Career>
+  <!-- Modals -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Projects -->
   <!-- <Projects>
     <div class="Projects" id="section-Projects">
@@ -127,10 +218,20 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.js" integrity="sha256-Fw/o8ZlEaGD4fqJz/yeVp5RBuuK3d9IlXr0XF4IN9GU="
     crossorigin="anonymous"></script>
+
   <script type="text/javascript">
     $(function () {
       var scroll = new SmoothScroll('a[href*="#section-"]');
     })
+  </script>
+  <!-- Muuri -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.3/muuri.min.js"></script>
+  <script>
+    const grid = new Muuri('.grid', {
+      dragEnabled: true
+    });
   </script>
 </body>
 
